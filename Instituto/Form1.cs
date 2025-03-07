@@ -21,5 +21,40 @@ namespace Instituto
         {
 
         }
+
+        private void txtUsuario_Enter(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "Usuario") 
+            {
+                txtUsuario.Text = "";
+            }
+        }
+
+        private void txtUsuario_Leave(object sender, EventArgs e)
+        {
+            if (txtUsuario.Text == "") 
+            {
+                txtUsuario.Text = "Usuario";
+            }
+        }
+
+        private void txtClave_Enter(object sender, EventArgs e)
+        {
+            if (txtClave.Text == "Contraseña") 
+            {
+                txtClave.Text = "";
+                txtClave.UseSystemPasswordChar = true;
+
+            }
+        }
+
+        private void txtClave_Leave(object sender, EventArgs e)
+        {
+            if (txtClave.Text == "") 
+            {
+                txtClave.Text = "Contraseña";
+                txtClave.UseSystemPasswordChar = false;
+            }
+        }
     }
 }

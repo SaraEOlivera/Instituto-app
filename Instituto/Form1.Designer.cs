@@ -41,17 +41,19 @@
             // txtUsuario
             // 
             this.txtUsuario.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtUsuario.Location = new System.Drawing.Point(290, 85);
+            this.txtUsuario.Location = new System.Drawing.Point(290, 55);
             this.txtUsuario.Name = "txtUsuario";
             this.txtUsuario.Size = new System.Drawing.Size(100, 27);
             this.txtUsuario.TabIndex = 0;
             this.txtUsuario.Text = "Usuario";
             this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtUsuario.Enter += new System.EventHandler(this.txtUsuario_Enter);
+            this.txtUsuario.Leave += new System.EventHandler(this.txtUsuario_Leave);
             // 
             // lblUsuario
             // 
             this.lblUsuario.AutoSize = true;
-            this.lblUsuario.Location = new System.Drawing.Point(224, 88);
+            this.lblUsuario.Location = new System.Drawing.Point(224, 58);
             this.lblUsuario.Name = "lblUsuario";
             this.lblUsuario.Size = new System.Drawing.Size(43, 13);
             this.lblUsuario.TabIndex = 1;
@@ -60,7 +62,7 @@
             // lblClave
             // 
             this.lblClave.AutoSize = true;
-            this.lblClave.Location = new System.Drawing.Point(224, 134);
+            this.lblClave.Location = new System.Drawing.Point(223, 128);
             this.lblClave.Name = "lblClave";
             this.lblClave.Size = new System.Drawing.Size(61, 13);
             this.lblClave.TabIndex = 3;
@@ -69,12 +71,14 @@
             // txtClave
             // 
             this.txtClave.Font = new System.Drawing.Font("Microsoft YaHei", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtClave.Location = new System.Drawing.Point(290, 131);
+            this.txtClave.Location = new System.Drawing.Point(290, 120);
             this.txtClave.Name = "txtClave";
             this.txtClave.Size = new System.Drawing.Size(100, 27);
             this.txtClave.TabIndex = 2;
             this.txtClave.Text = "Contraseña";
             this.txtClave.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.txtClave.Enter += new System.EventHandler(this.txtClave_Enter);
+            this.txtClave.Leave += new System.EventHandler(this.txtClave_Leave);
             // 
             // pictureBox1
             // 
@@ -92,7 +96,7 @@
             this.btnIngresar.Name = "btnIngresar";
             this.btnIngresar.Size = new System.Drawing.Size(163, 23);
             this.btnIngresar.TabIndex = 5;
-            this.btnIngresar.Text = "button1";
+            this.btnIngresar.Text = "Ingresar";
             this.btnIngresar.UseVisualStyleBackColor = true;
             // 
             // FormLogin
