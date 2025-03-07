@@ -55,5 +55,21 @@ namespace Instituto
                 txtClave.UseSystemPasswordChar = false;
             }
         }
+
+        private void btnIngresar_Click(object sender, EventArgs e)
+        {
+            DataTable tablaLogin = new DataTable();
+            Datos.Usuarios dato = new Datos.Usuarios();
+
+            tablaLogin = dato.LoginUsuario(txtUsuario.Text, txtClave.Text);
+            if (tablaLogin.Rows.Count > 0)
+            {
+                MessageBox.Show("Ingreso exitoso");
+            }
+            else 
+            {
+                MessageBox.Show("Usuario y/o clave incorrecto");
+            }
+        }
     }
 }
