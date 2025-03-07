@@ -44,7 +44,6 @@ namespace Instituto
             {
                 txtClave.Text = "";
                 txtClave.UseSystemPasswordChar = true;
-
             }
         }
 
