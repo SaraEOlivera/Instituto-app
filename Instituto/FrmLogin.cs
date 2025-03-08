@@ -17,11 +17,6 @@ namespace Instituto
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void txtUsuario_Enter(object sender, EventArgs e)
         {
             if (txtUsuario.Text == "Usuario") 
@@ -65,11 +60,21 @@ namespace Instituto
             if (tablaLogin.Rows.Count > 0)
             {
                 MessageBox.Show("Ingreso exitoso");
+                formPrincipal frmPrincipal = new formPrincipal();
+                frmPrincipal.rol = Convert.ToString(tablaLogin.Rows[0][0]);
+                frmPrincipal.usuario = Convert.ToString(txtUsuario.Text);
+                frmPrincipal.Show();
+                this.Hide();
             }
             else 
             {
                 MessageBox.Show("Usuario y/o clave incorrecto");
             }
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

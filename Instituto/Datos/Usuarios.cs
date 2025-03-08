@@ -18,11 +18,11 @@ namespace Instituto.Datos
             try
             {
                 sqlConexion = Conexion.getInstancia().crearConexion();
-                SqlCommand comando = new SqlCommand("IngresoLogin", sqlConexion);
+                SqlCommand comando = new SqlCommand("spIngresoLogin", sqlConexion);
                 comando.CommandType = CommandType.StoredProcedure;
 
-                comando.Parameters.Add("Usuario", SqlDbType.VarChar).Value = loginUsuario;
-                comando.Parameters.Add("Clave", SqlDbType.VarChar).Value = passUsuario;
+                comando.Parameters.Add("Usu", SqlDbType.VarChar).Value = loginUsuario;
+                comando.Parameters.Add("Pass", SqlDbType.VarChar).Value = passUsuario;
 
                 sqlConexion.Open();
 
