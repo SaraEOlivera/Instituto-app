@@ -138,6 +138,7 @@
             this.btnIngresarPostulante.TabIndex = 10;
             this.btnIngresarPostulante.Text = "Ingresar";
             this.btnIngresarPostulante.UseVisualStyleBackColor = true;
+            this.btnIngresarPostulante.Click += new System.EventHandler(this.btnIngresarPostulante_Click);
             // 
             // btnLimpiar
             // 
@@ -147,6 +148,7 @@
             this.btnLimpiar.TabIndex = 11;
             this.btnLimpiar.Text = "Limpiar";
             this.btnLimpiar.UseVisualStyleBackColor = true;
+            this.btnLimpiar.Click += new System.EventHandler(this.btnLimpiar_Click);
             // 
             // btnVolver
             // 
@@ -156,6 +158,7 @@
             this.btnVolver.TabIndex = 12;
             this.btnVolver.Text = "Volver";
             this.btnVolver.UseVisualStyleBackColor = true;
+            this.btnVolver.Click += new System.EventHandler(this.btnVolver_Click);
             // 
             // lblasterisco
             // 
@@ -226,6 +229,7 @@
             this.Name = "frmInscripcion";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Inscripcion del Postulante";
+            this.Load += new System.EventHandler(this.frmInscripcion_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pboPerfilPostulante)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
