@@ -88,9 +88,8 @@
             this.lblIngreso.AutoSize = true;
             this.lblIngreso.Location = new System.Drawing.Point(25, 12);
             this.lblIngreso.Name = "lblIngreso";
-            this.lblIngreso.Size = new System.Drawing.Size(29, 13);
+            this.lblIngreso.Size = new System.Drawing.Size(0, 13);
             this.lblIngreso.TabIndex = 5;
-            this.lblIngreso.Text = "ROL";
             // 
             // formPrincipal
             // 
@@ -104,6 +103,7 @@
             this.Controls.Add(this.btnEmitirComprobante);
             this.Controls.Add(this.btnInscribirPostulante);
             this.Name = "formPrincipal";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Principal";
             this.Load += new System.EventHandler(this.formPrincipal_Load);
             this.ResumeLayout(false);

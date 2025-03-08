@@ -18,9 +18,11 @@ namespace Instituto.Datos
             try
             {
                 sqlConexion = Conexion.getInstancia().crearConexion();
+                //El sp se llama : spIngresoLogin
                 SqlCommand comando = new SqlCommand("spIngresoLogin", sqlConexion);
                 comando.CommandType = CommandType.StoredProcedure;
 
+                //En el sp se crearon parametros Usu y Pass
                 comando.Parameters.Add("Usu", SqlDbType.VarChar).Value = loginUsuario;
                 comando.Parameters.Add("Pass", SqlDbType.VarChar).Value = passUsuario;
 
