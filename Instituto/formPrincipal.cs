@@ -32,7 +32,9 @@ namespace Instituto
 
         private void btnInscribirPostulante_Click(object sender, EventArgs e)
         {
-            
+            frmInscripcion inscripcion = new frmInscripcion();
+            inscripcion.Show();
+            this.Hide();
         }
     }
 }
