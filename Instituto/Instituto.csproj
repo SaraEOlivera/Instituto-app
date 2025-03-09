@@ -47,6 +47,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Datos\Conexion.cs" />
+    <Compile Include="Datos\Postulantes.cs" />
     <Compile Include="Datos\Usuarios.cs" />
     <Compile Include="Entidades\E_Postulante.cs" />
     <Compile Include="formPrincipal.cs">
