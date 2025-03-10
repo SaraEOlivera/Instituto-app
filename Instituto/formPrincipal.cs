@@ -39,7 +39,9 @@ namespace Instituto
 
         private void btnAsignarCurso_Click(object sender, EventArgs e)
         {
-
+            frmAsignar asignacion = new frmAsignar();
+            asignacion.Show();
+            this.Hide();
         }
     }
 }
