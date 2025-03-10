@@ -72,6 +72,7 @@
             this.btnAsignarCurso.TabIndex = 3;
             this.btnAsignarCurso.Text = "Asignar Curso";
             this.btnAsignarCurso.UseVisualStyleBackColor = true;
+            this.btnAsignarCurso.Click += new System.EventHandler(this.btnAsignarCurso_Click);
             // 
             // btnSalir
             // 

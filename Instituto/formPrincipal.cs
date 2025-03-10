@@ -36,5 +36,10 @@ namespace Instituto
             inscripcion.Show();
             this.Hide();
         }
+
+        private void btnAsignarCurso_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

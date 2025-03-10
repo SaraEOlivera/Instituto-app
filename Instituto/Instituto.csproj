@@ -56,6 +56,12 @@
     <Compile Include="formPrincipal.Designer.cs">
       <DependentUpon>formPrincipal.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAsignar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAsignar.Designer.cs">
+      <DependentUpon>frmAsignar.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmInscripcion.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +78,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="formPrincipal.resx">
       <DependentUpon>formPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAsignar.resx">
+      <DependentUpon>frmAsignar.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmInscripcion.resx">
       <DependentUpon>frmInscripcion.cs</DependentUpon>

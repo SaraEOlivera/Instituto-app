@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmInscripcion));
             this.pboPerfilPostulante = new System.Windows.Forms.PictureBox();
             this.lblInsCripcionTitulo = new System.Windows.Forms.Label();
             this.lblNombrePostulante = new System.Windows.Forms.Label();
@@ -50,9 +51,11 @@
             // 
             // pboPerfilPostulante
             // 
+            this.pboPerfilPostulante.Image = ((System.Drawing.Image)(resources.GetObject("pboPerfilPostulante.Image")));
             this.pboPerfilPostulante.Location = new System.Drawing.Point(12, 27);
             this.pboPerfilPostulante.Name = "pboPerfilPostulante";
             this.pboPerfilPostulante.Size = new System.Drawing.Size(224, 221);
+            this.pboPerfilPostulante.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pboPerfilPostulante.TabIndex = 0;
             this.pboPerfilPostulante.TabStop = false;
             // 
@@ -109,9 +112,9 @@
             this.lblDocumentoPostulante.AutoSize = true;
             this.lblDocumentoPostulante.Location = new System.Drawing.Point(285, 228);
             this.lblDocumentoPostulante.Name = "lblDocumentoPostulante";
-            this.lblDocumentoPostulante.Size = new System.Drawing.Size(35, 13);
+            this.lblDocumentoPostulante.Size = new System.Drawing.Size(62, 13);
             this.lblDocumentoPostulante.TabIndex = 6;
-            this.lblDocumentoPostulante.Text = "label4";
+            this.lblDocumentoPostulante.Text = "Documento";
             // 
             // cboTipoPostulante
             // 
