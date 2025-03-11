@@ -76,5 +76,13 @@ namespace Instituto
         {
 
         }
+
+
+
+
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }

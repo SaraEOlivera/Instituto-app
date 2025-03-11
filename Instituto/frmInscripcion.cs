@@ -71,5 +71,13 @@ namespace Instituto
             cboTipoPostulante.Text = "";
             txtNombrePostulante.Focus();
         }
+
+
+
+
+        private void frmLogin_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            System.Windows.Forms.Application.Exit();
+        }
     }
 }
