@@ -31,7 +31,8 @@ namespace Instituto
             {
                 string query;
                 sqlConnection = Conexion.getInstancia().crearConexion();
-                query = "Select C.Nombre, E.fecha, CONCAT(D.NombreDoc,'',D.ApellidoDoc) as Docente, C.precio from curso C inner join edicion E on C.NumCurso = E.NumCurso inner join docente D on E.NumeroDoc = D.NumeroDoc where E.fecha > GETDATE() order by C.Nombre";
+                query = "Select C.Nombre, E.fecha, CONCAT(D.NombreDoc,'',D.ApellidoDoc) as Docente, C.precio from curso C inner join edicion E on C.NumCurso = E.NumCurso inner join docente D on E.NumeroDoc = D.NumeroDoc  order by C.Nombre";
+                //antes del order by iba : where E.fecha > GETDATE()
                 SqlCommand comando = new SqlCommand(query, sqlConnection);
                 comando.CommandType = CommandType.Text;
                 sqlConnection.Open();
