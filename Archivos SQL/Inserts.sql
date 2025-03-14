@@ -54,7 +54,8 @@ Truncate table Curso;
 
 Select * from curso
 
--- 1 - Ingresar IdDocente de forma aleatoria en la Tabla Curso:
+-- 1 - Crear una tabla temporal para almacenar 
+--los IdDocentes en orden aleatorio:
 
 CREATE TABLE #IdDocenteTemporal (IdDocente INT, Rownum INT);
 

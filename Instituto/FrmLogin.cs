@@ -21,15 +21,17 @@ namespace Instituto
         {
             if (txtUsuario.Text == "Usuario") 
             {
-                txtUsuario.Text = "";
+                txtUsuario.Text = "";   
+                txtUsuario.ForeColor = Color.Black;
             }
         }
 
         private void txtUsuario_Leave(object sender, EventArgs e)
         {
-            if (txtUsuario.Text == "") 
+            if (string.IsNullOrEmpty(txtUsuario.Text)) 
             {
                 txtUsuario.Text = "Usuario";
+                txtUsuario.ForeColor = Color.Gray;
             }
         }
 
@@ -39,42 +41,18 @@ namespace Instituto
             {
                 txtClave.Text = "";
                 txtClave.UseSystemPasswordChar = true;
+                txtClave.ForeColor = Color.Black;
             }
         }
 
         private void txtClave_Leave(object sender, EventArgs e)
         {
-            if (txtClave.Text == "") 
+            if (string.IsNullOrEmpty(txtClave.Text)) 
             {
                 txtClave.Text = "Contraseña";
+                txtClave.ForeColor = Color.Gray;
                 txtClave.UseSystemPasswordChar = false;
             }
-        }
-
-        private void btnIngresar_Click(object sender, EventArgs e)
-        {
-            DataTable tablaLogin = new DataTable();
-            Datos.Usuarios dato = new Datos.Usuarios();
-
-            tablaLogin = dato.LoginUsuario(txtUsuario.Text, txtClave.Text);
-            if (tablaLogin.Rows.Count > 0)
-            {
-                MessageBox.Show("Ingreso exitoso");
-                formPrincipal frmPrincipal = new formPrincipal();
-                frmPrincipal.rol = Convert.ToString(tablaLogin.Rows[0][0]);
-                frmPrincipal.usuario = Convert.ToString(txtUsuario.Text);
-                frmPrincipal.Show();
-                this.Hide();
-            }
-            else 
-            {
-                MessageBox.Show("Usuario y/o clave incorrecto");
-            }
-        }
-
-        private void FormLogin_Load(object sender, EventArgs e)
-        {
-
         }
 
 
