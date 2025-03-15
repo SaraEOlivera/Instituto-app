@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Dominio;
+using Datos;
+
 
 namespace Instituto
 {
@@ -63,6 +66,9 @@ namespace Instituto
             System.Windows.Forms.Application.Exit();
         }
 
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
 
+        }
     }
 }

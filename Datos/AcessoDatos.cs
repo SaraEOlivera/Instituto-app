@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Instituto
+namespace Datos
 {
-    internal class AcessoDatos
+    public class AcessoDatos
     {
     }
 }
